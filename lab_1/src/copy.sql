@@ -1,0 +1,9 @@
+copy mservice.account from 'D:\Study\DB_labs\lab_1\data\user.csv' delimiter ',' header;
+copy mservice.musician from 'D:\Study\DB_labs\lab_1\data\musician.csv' delimiter ',' header;
+copy mservice.producer from 'D:\Study\DB_labs\lab_1\data\producer.csv' delimiter ',' header;
+copy mservice.track from 'D:\Study\DB_labs\lab_1\data\track.csv' delimiter ',' header;
+copy mservice.mus_prod from 'D:\Study\DB_labs\lab_1\data\mus-prod.csv' delimiter ',' header;
+copy mservice.mus_track from 'D:\Study\DB_labs\lab_1\data\mus-track.csv' delimiter ',' header;
+copy mservice.user_mus from 'D:\Study\DB_labs\lab_1\data\user-mus.csv' delimiter ',' header;
+copy mservice.user_track from 'D:\Study\DB_labs\lab_1\data\user-track.csv' delimiter ',' header;
+copy mservice.prod_track from 'D:\Study\DB_labs\lab_1\data\prod-track.csv' delimiter ',' header;
