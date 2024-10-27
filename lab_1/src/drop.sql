@@ -1,6 +1,8 @@
 drop table if exists mservice.track;
 drop table if exists mservice.account;
+
 drop table if exists mservice.musician;
+
 drop table if exists mservice.producer;
 drop table if exists mservice.mus_prod;
 drop table if exists mservice.mus_track;

@@ -138,8 +138,8 @@ where m.followers < 300
 
 --- 18. Простая инструкция UPDATE.
 --- Уменьшить количество подписчиков на 99.999990% всем продюссерам
-update mservice.producer 
-set followers = cast(followers * 0.000001 as integer)
+update mservice.musician 
+set followers = cast(followers * 0.1 as integer)
 
 --- 19. Инструкция UPDATE со скалярным подзапросом в предложении SET. 
 --- Увеличить количество подписчиков всем музыкантам, у которых 0 подписчиков
