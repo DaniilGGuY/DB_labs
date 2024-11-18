@@ -131,6 +131,19 @@ class MusicianService:
         self.__conn.commit()
 
     def insert_func_request(self):
+        # Проверка существования таблицы
+        sql_check = ("""
+            select exists (
+                select 
+                from information_schema.tables
+                where table_name = 'mservice.mus_earnings'
+            );""")
+        self.__cursor.execute(sql_check)
+
+        if not(self.__cursor.fetchone()[0]):
+            print("Не существует отношения mservice.mus_earnings")
+            return
+
         # Вставка элементов
         sql_request = """
             insert into mservice.mus_earnings (id, login, track_id, salary)
